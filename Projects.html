@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">                
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/letter-a.png">
+
+    <title>Adil Rabbani</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+
+    <style>
+      
+      @font-face{
+            font-family:"Camphor_Heavy";
+            src:url(fonts/CamphorW04-Heavy.ttf);
+        }
+
+        @font-face{
+            font-family:"Camphor_Bold";
+            src:url(fonts/CamphorW04-Bold.ttf);
+        }
+
+    body{
+            color: white;
+            font-size: 15px;
+            font-family: 'Camphor_Heavy';
+
+            background: #00d2ff;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+
+        }
+
+
+.tooltip-inner {
+    max-width: 200px;
+    padding: 3px 8px;
+    color: #212121;
+    text-align: center;
+    border-radius: .25rem;
+    background-color: white;
+    font-family: 'Camphor_Bold';
+}
+
+.tooltip.bs-tooltip-auto[x-placement^=bottom] .arrow::before, .tooltip.bs-tooltip-bottom .arrow::before {
+    content: "";
+    border-width: 0 5px 5px;
+    border-bottom-color: white;
+}
+    </style>
+  </head>
+
+  <body>            
+
+    <main role="main">
+
+      <div class="container">
+        <!-- Example row of columns -->
+
+        <div class="row">
+        
+          <div class="col-md-1"> <a href="index.html"><img src='images/left-arrow-angle.svg' class='img-responsive margin' alt='Me' width='30' height='30' data-toggle='tooltip' data-placement='bottom' title="Back" style="
+            margin-left:15px;"></a> </div>
+          <div class="col-md-11">
+            <center><h1 style="font-size:50px;">My Projects</h1></center>
+          </div>
+
+        </div>
+
+        <br>
+
+        <div class="row">
+          
+          <div class="col-md-6" style="font-size:17px;">
+            <h1>Marbles</h1>
+            <p style="font-family: 'Camphor_Bold';">A simple multiplayer racing game using Three.js and socket.io. This was made for Computer Graphics Project and we were given 10 days to make a game using Three.js. Me and my group member implemented collision detection (sphere-cube) and a simple accelerating effect for the ball. We implemented the algorithm for determining the position of the player using checkpoints and the distance between each consecutive checkpoint.</p>
+          </div>
+
+          <div class="col-md-6">
+            
+            <img src='images/1.png' class='img-responsive margin' alt='Me' width='481.87' height='300' style="border : 3px solid white;">
+
+          </div>
+          
+        </div>
+
+        <br>
+
+        <div class="row">
+          
+          <div class="col-md-6" style="font-size:17px;">
+            <h1>2 Cars on Canvas</h1>
+            <p style="font-family: 'Camphor_Bold';">Implemented the famous android game '2 Cars' on HTML Canvas. Build simple particles and a score system.</p>
+          </div>
+
+          <div class="col-md-6">
+            
+            <img src='images/3.png' class='img-responsive margin' alt='Me' width='481.87' height='222.53' style="border : 3px solid white;">
+
+          </div>
+          
+        </div>
+
+        <br>
+
+        <div class="row">
+          
+          <div class="col-md-6" style="font-size:17px;">
+            <h1>Checkers</h1>
+            <p style="font-family: 'Camphor_Bold';">Implemented Checkers on C++ as part of the Data Structures and Algorithms course. Implemented GUI using SFML. The game uses a simple A.I similar to Minimax. Used Linked Lists to store possible future moves and predict the next best move for the CPU.</p>
+          </div>
+
+          <div class="col-md-6">
+            
+            <img src='images/4.png' class='img-responsive margin' alt='Me' width='481.87' height='387.102' style="border : 3px solid white;">
+
+          </div>
+          
+        </div>
+
+
+      </div> <!-- /container -->
+      
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+          <hr style="border:2px solid #FFFFFF;">
+          <p>Copyright © Adil Rabbani. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="vendor/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+      
+      $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip(); 
+      });
+
+    </script>
+
+  </body>
+</html>
