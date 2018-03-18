@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!--<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1"> -->
+    <meta name="description" content="Assignment-1_ComputerGraphics_AdilRabbani">
+    <meta name="author" content="AdilRabbani">
+
+    <title>Assignment_1 - Adil Rabbani - Computer Graphics</title>
+
+    <link rel="stylesheet" href="../css/animate.css"> 
+    
+    <style>
+    
+         @font-face{
+            font-family:"Roboto-Black";
+            src:url(../fonts/Roboto-Black.ttf);
+        }
+        
+        @font-face{
+            font-family:"Myriad-pro";
+            src:url(../fonts/SourceSansPro-Black.ttf);
+        }
+        
+         @font-face{
+            font-family:"Raleway-Bold";
+            src:url(../fonts/Raleway-Bold.ttf);
+        }
+        
+        @font-face{
+            font-family:"Catamaran-Bold";
+            src:url(../fonts/Myriad-Pro-Light.ttf);
+        }
+        
+        
+        body{
+            font-family:"Myriad-pro";
+            background-color: #CFD8DC;
+            color: black;
+            font-size: 15px;
+        }
+        
+        canvas {
+            border: 2px solid black;
+            background-color: white;
+        }
+        
+        .dg.main li{
+            font-size: 13px !important;
+            font-family:'Roboto-Black';
+        }
+        
+        .dg.main .close-button{
+            height: 25px !important;
+            font-size: 13px !important;
+            font-family:'Roboto-Black' !important;
+        }
+    
+        
+    </style>
+
+</head>
+
+    
+    
+<body>
+    
+   
+            <canvas id="webgl" width="600" height="600" class="animated bounceInDown">
+              Sorry, your browser doesn't support the &lt;canvas&gt; element.
+            </canvas>
+            <p style="font-size:40px;font-family:'Catamaran-Bold';margin-top:-600px;margin-left:700px;" class="animated fadeInDown">The <p style="font-size:50px;margin-top:-45px;margin-left:700px;" class="animated fadeInDown">Artist<img src='../images/002-paint-brush.png' class='animated fadeInDown' alt='PaintBrush' width='80' height='80' style="margin-top:-120px;margin-left:-8px;"></p></p>
+    
+            <p style="font-size:35px;font-family:'Catamaran-Bold';margin-top:50px;margin-left:700px;" class="animated fadeInDown" id="selection">Select a tool</p>
+                  
+                  <p style="font-size:35px;font-family:'Catamaran-Bold';margin-top:50px;display:none;margin-left:700px;" class="animated fadeInDown" id="bucketselected">Paint Bucket Selected</p>
+                  
+                  <p style="font-size:35px;font-family:'Catamaran-Bold';margin-top:50px;display:none;margin-left:700px;" class="animated fadeInDown" id="triangleselected">Triangle Selected</p>
+                  
+                  <p style="font-size:35px;font-family:'Catamaran-Bold';margin-top:50px;display:none;margin-left:700px;" class="animated fadeInDown" id="squareselected">Square Selected</p>
+                  
+                  <p style="font-size:35px;font-family:'Catamaran-Bold';margin-top:50px;display:none;margin-left:700px;" class="animated fadeInDown" id="circleselected">Circle Selected</p>
+                  
+                  <p style="font-size:35px;font-family:'Catamaran-Bold';margin-top:50px;display:none;margin-left:700px;" class="animated fadeInDown" id="pentagonselected">Pentagon Selected</p>
+                  
+                  <p style="font-size:35px;font-family:'Catamaran-Bold';margin-top:50px;display:none;margin-left:700px;" class="animated fadeInDown" id="hexagonselected">Hexagon Selected</p>
+                  
+                  <p style="font-size:35px;font-family:'Catamaran-Bold';margin-top:50px;display:none;margin-left:700px;" class="animated fadeInDown" id="starselected">Star Selected</p>
+    
+    
+            <p style="font-size:35px;font-family:'Catamaran-Bold';margin-top:50px;margin-left:700px;" class="animated fadeInDown">Made By</p>
+    <p style="font-size:40px;margin-top:-25px;margin-left:700px;" class="animated fadeInDown">Adil Rabbani</p>
+    
+    <script id="vertex-shader" type="x-shader/x-vertex">		
+		attribute vec4 a_Position;
+        uniform mat4 transformationMatrix;
+		void
+		main()
+		{
+		    gl_Position = transformationMatrix * a_Position;
+			gl_PointSize = 1.0;
+		}
+	</script>
+
+	<script id="fragment-shader" type="x-shader/x-fragment">
+		precision mediump float;
+        uniform vec4 u_FragColor;
+		void
+		main()
+		{
+		    gl_FragColor = u_FragColor;
+		}
+	</script>
+    
+    <script src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/dat.gui-master/build/dat.gui.js"></script>
+    <script type="text/javascript" src="../main_js/main_js.js"></script>
+    
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+	<script src="../lib/initShaders.js"></script>
+	<script src="../lib/flatten.js"></script>
+	<script src="../lib/cuon-matrix.js"></script>
+    
+</body>
+
+</html>
