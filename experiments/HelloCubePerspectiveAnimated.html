@@ -3,11 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="../images/Logo.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab:500,700" rel="stylesheet">
+
     <title>Perspective projection on WebGL</title>
       
       <style>
     
     	body {
+    		font-family: 'Zilla Slab', serif;
     		background-color: #B0BEC5;
     	}
 
@@ -23,6 +27,8 @@
     <canvas id="webgl" width="600" height="600">
     Please use a browser that supports "canvas"
     </canvas>
+
+    <p style="font-size:40px;margin-top:-600px;margin-left:700px;font-weight:700;" class="animated fadeInDown">Perspective <p style="font-size:40px;margin-top:-45px;margin-left:700px;font-weight:400;" class="animated fadeInDown">Projection</p></p>
 	
 	<script id="vertex-shader" type="x-shader/x-vertex">		
 		attribute vec4 a_Position;
