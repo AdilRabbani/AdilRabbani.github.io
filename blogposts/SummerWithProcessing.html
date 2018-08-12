@@ -182,6 +182,8 @@ canvas {
 
               </p>
 
+              <h2>Arc</h2> <br>
+
               <p>
               I have already been using p5.js for some simple sketches and animations, watching Daniel Shiffman's videos but I haven't really dived into the codebase. I started my summer by going through <a href="https://github.com/processing/p5.js/tree/master/test/manual-test-examples/webgl">manual examples</a>, debugging them in Chrome and watching the code jump from function to function. I have to admit though, it was a little daunting at first. My first task was to implement arc for WebGL mode and so I decided to go through already implemented ellipse and debugging it in the chrome editor. </p>
 
@@ -216,6 +218,9 @@ canvas {
             <div class="col-md-1"></div>
 
             <div class="col-md-10">
+
+              <h2>Point</h2> <br>
+
               <p>
               WebGL by default renders square points. Looking through some resources on web gave me an idea of discarding pixels from a square point further to render a circular point. Adding the shader in p5.js was relatively simple. But upon adding the shader I came across a devilish bug that didn't go off no matter what. I spent a week and a half just going through every portion of the code, looking for where I went wrong but I was literally stuck. I decided to contact Stalgia and he looked through the code and suggested me to have a look in my shader code. There was one thing in my shader that was different from all the other shaders in p5.js. It was using attribute variable for pointSize while p5.js used uniform. I changed the variable to uniform and that was it! Everything was working perfectly.</p>
 
@@ -249,6 +254,8 @@ canvas {
 
           <div class="col-md-10">
             
+            <h2>BezierVertex, CurveVertex and QuadraticVertex</h2> <br>
+
             <p>
               
               I decided to go for curves next. I went through a great article on <a href="https://pomax.github.io/bezierinfo/en-GB/">bezier curves</a> for this task. Reading the article I came to know that a bezier curve can be easily converted to Catmull Rom Splines so this meant that if I was able to implement bezierVertex, implementing curveVertex was relatively simple (just converting the points). While quadraticVertex can be implemented by changing the formula used to compute coefficients for curves. </p>
@@ -287,6 +294,8 @@ canvas {
           <div class="col-md-1"></div>
           <div class="col-md-10">
             
+            <h2>Text</h2> <br>
+
             <p>
             While working on curves I was also able to <a href="https://github.com/processing/p5.js/pull/3075">fix</a> a minor <a href="https://github.com/processing/p5.js/issues/3065">issue</a> with triangle stroke in 2D in p5.js. I also ported some examples from Processing to p5.js <a href="https://github.com/processing/p5.js-website/pull/242">#242</a>. Now I had one big task left : Implementing text for p5.js WebGL mode. Let me just mention one thing though, "One does not simply implement text in WebGL 😥" </p>
             
