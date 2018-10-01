@@ -12,8 +12,7 @@
     <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,800" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="../jumbotron.css" rel="stylesheet">
@@ -23,10 +22,12 @@
     <style>
 
     body{
-            color: #263238;
+            color: white;
             font-size: 20px;
-            font-family: 'PT Serif', serif;
-            background-color : white;
+            font-family: 'Montserrat', sans-serif;
+            background: url("../images/tiny-squares.png"), #13191E;
+        	background-repeat: repeat;
+        	background-blend-mode: overlay;
 
         }
 
@@ -104,24 +105,24 @@ canvas {
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item active">
-                  <a class="nav-link" href="../index.html" style="color:#263238;">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="../index.html" style="color:white;">Home <span class="sr-only">(current)</span></a>
                 </li>
 
                 
                 <li class="nav-item active">
-                  <a class="nav-link" href="https://adilrabbani.github.io/resume/AdilRabbani_Resume.pdf" style="color:#263238;">Resume <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="https://adilrabbani.github.io/resume/AdilRabbani_Resume.pdf" style="color:white;">Resume <span class="sr-only">(current)</span></a>
                 </li> 
 
                 <li class="nav-item active">
-                  <a class="nav-link" href="../Projects.html" style="color:#263238;">Projects <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="../Projects.html" style="color:white;">Projects <span class="sr-only">(current)</span></a>
                 </li>
 
                 <li class="nav-item active">
-                  <a class="nav-link" href="../Experiments.html" style="color:#263238;">Experiments <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="../Experiments.html" style="color:white;">Experiments <span class="sr-only">(current)</span></a>
                 </li>
 
                 <li class="nav-item active">
-                  <a class="nav-link" href="../Blog.html" style="color:#263238;">Blog <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="../Blog.html" style="color:white;">Blog <span class="sr-only">(current)</span></a>
                 </li>
                 
               </ul>
@@ -136,7 +137,7 @@ canvas {
           </div>
 
           <div class="col-md-4">
-            <hr style="border: 1px solid #263238;">
+            <hr style="border: 1px solid white;">
           </div>
 
           <div class="col-md-4">
@@ -147,7 +148,7 @@ canvas {
          <div class="row">
         
           <div class="col-md-12">
-            <center><h1 style="font-weight: 900;font-family: 'Playfair Display', serif;">GSOC 2018 - My Summer with Processing Foundation</h1></center>
+            <center><h1 style="font-weight: 900;">GSOC 2018 - My Summer with Processing Foundation</h1></center>
           </div>
 
         </div>
@@ -158,7 +159,7 @@ canvas {
           </div>
 
           <div class="col-md-4">
-            <hr style="border: 1px solid #263238;">
+            <hr style="border: 1px solid white;">
           </div>
 
           <div class="col-md-4">
@@ -182,7 +183,7 @@ canvas {
 
               </p>
 
-              <h2>Arc</h2> <br>
+              <h2 style="font-weight: 900;">Arc</h2>
 
               <p>
               I have already been using p5.js for some simple sketches and animations, watching Daniel Shiffman's videos but I haven't really dived into the codebase. I started my summer by going through <a href="https://github.com/processing/p5.js/tree/master/test/manual-test-examples/webgl">manual examples</a>, debugging them in Chrome and watching the code jump from function to function. I have to admit though, it was a little daunting at first. My first task was to implement arc for WebGL mode and so I decided to go through already implemented ellipse and debugging it in the chrome editor. </p>
@@ -204,7 +205,7 @@ canvas {
           <div class="col-md-8">
             
             <center>
-            <div id="sketch-2" style="width:80%; height:auto;-webkit-box-shadow: 0px 2px 17px 7px rgba(144,164,174,0.2);box-shadow: 0px 2px 17px 7px rgba(144,164,174,0.2);"></div><br><i>Pizza in p5.js!</i></center>
+            <div id="sketch-2" style="width:80%; height:auto;"></div><br><i>Pizza in p5.js!</i></center>
 
           </div>
           <div class="col-md-2"></div>
@@ -219,7 +220,7 @@ canvas {
 
             <div class="col-md-10">
 
-              <h2>Point</h2> <br>
+              <h2 style="font-weight: 900;">Point</h2>
 
               <p>
               WebGL by default renders square points. Looking through some resources on web gave me an idea of discarding pixels from a square point further to render a circular point. Adding the shader in p5.js was relatively simple. But upon adding the shader I came across a devilish bug that didn't go off no matter what. I spent a week and a half just going through every portion of the code, looking for where I went wrong but I was literally stuck. I decided to contact Stalgia and he looked through the code and suggested me to have a look in my shader code. There was one thing in my shader that was different from all the other shaders in p5.js. It was using attribute variable for pointSize while p5.js used uniform. I changed the variable to uniform and that was it! Everything was working perfectly.</p>
@@ -239,7 +240,7 @@ canvas {
           <div class="col-md-8">
             
             <center>
-            <div id="sketch-1" style="width:80%; height:auto;-webkit-box-shadow: 0px 2px 17px 7px rgba(144,164,174,0.2);box-shadow: 0px 2px 17px 7px rgba(144,164,174,0.2);"></div><br><i>Sphere in p5.js using Spherical Coordinates.</i></center>
+            <div id="sketch-1" style="width:80%; height:auto;"></div><br><i>Sphere in p5.js using Spherical Coordinates.</i></center>
 
           </div>
           <div class="col-md-2"></div>
@@ -254,7 +255,7 @@ canvas {
 
           <div class="col-md-10">
             
-            <h2>BezierVertex, CurveVertex and QuadraticVertex</h2> <br>
+            <h2 style="font-weight: 900;">BezierVertex, CurveVertex and QuadraticVertex</h2>
 
             <p>
               
@@ -280,7 +281,7 @@ canvas {
           <div class="col-md-8">
             
             <center>
-            <div id="sketch-3" style="width:80%; height:auto;-webkit-box-shadow: 0px 2px 17px 7px rgba(144,164,174,0.2);box-shadow: 0px 2px 17px 7px rgba(144,164,174,0.2);"></div><br><i>You can draw a flower out of curves in p5.js!</i></center>
+            <div id="sketch-3" style="width:80%; height:auto;"></div><br><i>You can draw a flower out of curves in p5.js!</i></center>
 
           </div>
           <div class="col-md-2"></div>
@@ -294,7 +295,7 @@ canvas {
           <div class="col-md-1"></div>
           <div class="col-md-10">
             
-            <h2>Text</h2> <br>
+            <h2 style="font-weight: 900;">Text</h2>
 
             <p>
             While working on curves I was also able to <a href="https://github.com/processing/p5.js/pull/3075">fix</a> a minor <a href="https://github.com/processing/p5.js/issues/3065">issue</a> with triangle stroke in 2D in p5.js. I also ported some examples from Processing to p5.js <a href="https://github.com/processing/p5.js-website/pull/242">#242</a>. Now I had one big task left : Implementing text for p5.js WebGL mode. Let me just mention one thing though, "One does not simply implement text in WebGL 😥" </p>
@@ -320,9 +321,9 @@ canvas {
 
     <footer class="footer">
       <div class="container">
-          <hr style="border:3px solid #01579B;">
-          <hr style="border:2px solid #6200EA;margin-top:-12px;">
-          <p style="font-size:15px;">Copyright © Adil Rabbani. All Rights Reserved.</p>
+          <hr style="border:3px solid #2979FF;">
+          <hr style="border:2px solid #7C4DFF;margin-top:-12px;">
+          <p style="font-size: 15px;">Copyright © Adil Rabbani. All Rights Reserved.</p>
       </div>
     </footer>
 
