@@ -4,6 +4,7 @@ var pi;
 var sdigits = [];
 var counts = [];
 var currentIndex = 0;
+var width;
 
 sketch_.preload = function()
 {
@@ -12,7 +13,8 @@ sketch_.preload = function()
 
 sketch_.setup = function()
 {
-    sketch_.createCanvas(900, 900);
+    width = document.getElementById('sketch-VisualizingPi').offsetWidth;
+    sketch_.createCanvas(width, width);
     sketch_.background(30);
     for (var i = 1; i < pi.length; i++)
     {
