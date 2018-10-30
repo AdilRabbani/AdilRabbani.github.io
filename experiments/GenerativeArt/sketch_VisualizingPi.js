@@ -33,7 +33,6 @@ sketch_.setup = function()
     sketch_.noFill();
     sketch_.translate(sketch_.width/2 , sketch_.width/2);
     sketch_.strokeWeight(1);
-    console.log("hello");
 }
 
 sketch_.draw = function()
