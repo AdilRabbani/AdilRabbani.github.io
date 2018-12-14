@@ -5,23 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../images/Logo.png">
+    <link rel="icon" href="../../images/Logo.png">
 
     <title>Adil Rabbani</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500,800" rel="stylesheet">
 
     <style>
 
     body{
-            color: #37474F;
+            color: white;
             font-size: 15px;
             padding-top: 2rem;
             font-family: 'Montserrat', sans-serif;
-            background-color: white;
+            background-color: #1E1E1E;
 
         }
 
@@ -57,23 +57,27 @@
 
 
 a:link {
-    color: #263238;
+    color: white;
 }
 
 /* visited link */
 a:visited {
-    color: #263238;
+    color: white;
 }
 
 /* mouse over link */
 a:hover {
-    color: #0D47A1;
+    color: #2979FF;
     text-decoration: none;
 }
 
 /* selected link */
 a:active {
-    color: #263238;
+    color: white;
+}
+
+canvas {
+    display: inline;
 }
 
 
@@ -105,20 +109,20 @@ a:active {
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item active">
-                  <a class="nav-link" href="../index.html" style="color:#37474F;">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="../../index.html" style="color:white;">Home <span class="sr-only">(current)</span></a>
                 </li>
 
                 
                 <li class="nav-item active">
-                  <a class="nav-link" href="https://adilrabbani.github.io/resume/AdilRabbani_Resume.pdf" style="color:#37474F;">Resume <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="https://adilrabbani.github.io/resume/AdilRabbani_Resume.pdf" style="color:white;">Resume <span class="sr-only">(current)</span></a>
                 </li> 
 
                 <li class="nav-item active">
-                  <a class="nav-link" href="../Projects.html" style="color:#37474F;">Projects <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="../../Projects.html" style="color:white;">Projects <span class="sr-only">(current)</span></a>
                 </li>
 
                 <li class="nav-item active">
-                  <a class="nav-link" href="../Experiments.html" style="color:#37474F;">Experiments <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="../../Experiments.html" style="color:white;">Experiments <span class="sr-only">(current)</span></a>
                 </li>
                 
               </ul>
@@ -127,31 +131,31 @@ a:active {
 
         </div>
 
-        <div class="row">
-        
-          <div class="col-md-12">
-            <center><h1 style="font-weight: 800;">Generative Art</h1></center>
-          </div>
+        <br>
 
+        <div class="row">
+          <div class="col-md-12">
+            <h1 style="font-weight: 800;">Perlin Noise Flow Field in p5.js</h1>
+          </div>
         </div>
 
         <br>
 
         <div class="row">
-          <div class="col-md-4">
-            <center><a href="GenerativeArt/VisualizingPi.html"><img href="https://github.com/AdilRabbani/AdilRabbani.github.io/" src='../images/VisualizingPi.PNG' class='img-responsive margin img-fluid' alt='Me' width=100% height=auto style="border: 4px solid white;"></a>
-            <p style="font-size: 20px;">Visualizing Pi using p5.js.</p></center>
+          <div class="col-md-12">
+            <center><div id="sketch-PerlinNoiseFlowField" style="width:60%; height:auto;"></div></center>
           </div>
+        </div>
 
-          <div class="col-md-4">
-            <center><a href="GenerativeArt/PerlinNoiseFlowField.html"><img href="https://github.com/AdilRabbani/AdilRabbani.github.io/" src='../images/PerlinNoiseFlowField.PNG' class='img-responsive margin img-fluid' alt='Me' width=100% height=auto style="border: 4px solid white;"></a>
-            <p style="font-size: 20px;">Perlin Noise Flow Field in p5.js.</p></center>
-          </div>
-        </div> 
-
-        
         <br>
 
+        <div class="row">
+          <div class="col-md-12">
+            <center><p style="font-size:20px;">A colorful Perlin Noise flow field using p5.js.</p></center>
+          </div>
+        </div>
+
+        <br>
         
 
       </div> <!-- /container -->
@@ -172,8 +176,8 @@ a:active {
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../vendor/popper.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
+    <script src="../../vendor/popper.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
 
     <script>
       
@@ -182,6 +186,11 @@ a:active {
       });
 
     </script>
+
+    <script type="text/javascript" src="../../js/p5.js"></script>
+    <script type="text/javascript" src="../../js/p5.dom.js"></script>
+    <script type="text/javascript" src="sketch_1.js"></script>
+    <script type="text/javascript" src="sketch_perlinNoise_FlowField.js"></script>
 
   </body>
 </html>
