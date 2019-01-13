@@ -8,33 +8,13 @@
 
     <title>Experiment with Shapes on WebGL - Adil Rabbani</title>
 
-    <link rel="stylesheet" href="../css/animate.css"> 
+    <link rel="stylesheet" href="../css/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,800" rel="stylesheet">
     
     <style>
-    
-         @font-face{
-            font-family:"Roboto-Black";
-            src:url(../fonts/Roboto-Black.ttf);
-        }
-        
-        @font-face{
-            font-family:"Myriad-pro";
-            src:url(../fonts/SourceSansPro-Black.ttf);
-        }
-        
-         @font-face{
-            font-family:"Raleway-Bold";
-            src:url(../fonts/Raleway-Bold.ttf);
-        }
-        
-        @font-face{
-            font-family:"Catamaran-Bold";
-            src:url(../fonts/Myriad-Pro-Light.ttf);
-        }
-        
         
         body{
-            font-family:"Myriad-pro";
+            font-family: 'Montserrat', sans-serif;
             background-color: #CFD8DC;
             color: black;
             font-size: 15px;
@@ -44,16 +24,16 @@
             border: 2px solid black;
             background-color: white;
         }
-        
+
         .dg.main li{
             font-size: 13px !important;
-            font-family:'Roboto-Black';
+            font-family: 'Montserrat', sans-serif !important;
         }
         
         .dg.main .close-button{
             height: 25px !important;
             font-size: 13px !important;
-            font-family:'Roboto-Black' !important;
+            font-family: 'Montserrat', sans-serif !important;
         }
     
         
@@ -69,26 +49,26 @@
             <canvas id="webgl" width="600" height="600" class="animated bounceInDown">
               Sorry, your browser doesn't support the &lt;canvas&gt; element.
             </canvas>
-            <p style="font-size:40px;font-family:'Catamaran-Bold';margin-top:-600px;margin-left:700px;" class="animated fadeInDown">The <p style="font-size:50px;margin-top:-45px;margin-left:700px;" class="animated fadeInDown">Artist<img src='../images/002-paint-brush.png' class='animated fadeInDown' alt='PaintBrush' width='80' height='80' style="margin-top:-120px;margin-left:-8px;"></p></p>
+            <p style="font-size:40px;margin-top:-600px;margin-left:700px;" class="animated fadeInDown">The <p style="font-size:50px;margin-top:-45px;margin-left:700px;" class="animated fadeInDown">Artist<img src='../images/002-paint-brush.png' class='animated fadeInDown' alt='PaintBrush' width='80' height='80' style="margin-top:-120px;margin-left:-8px;"></p></p>
     
-            <p style="font-size:35px;font-family:'Catamaran-Bold';margin-top:50px;margin-left:700px;" class="animated fadeInDown" id="selection">Select a tool</p>
+            <p style="font-size:35px;margin-top:50px;margin-left:700px;" class="animated fadeInDown" id="selection">Select a tool</p>
                   
-                  <p style="font-size:35px;font-family:'Catamaran-Bold';margin-top:50px;display:none;margin-left:700px;" class="animated fadeInDown" id="bucketselected">Paint Bucket Selected</p>
+                  <p style="font-size:35px;margin-top:50px;display:none;margin-left:700px;" class="animated fadeInDown" id="bucketselected">Paint Bucket Selected</p>
                   
-                  <p style="font-size:35px;font-family:'Catamaran-Bold';margin-top:50px;display:none;margin-left:700px;" class="animated fadeInDown" id="triangleselected">Triangle Selected</p>
+                  <p style="font-size:35px;margin-top:50px;display:none;margin-left:700px;" class="animated fadeInDown" id="triangleselected">Triangle Selected</p>
                   
-                  <p style="font-size:35px;font-family:'Catamaran-Bold';margin-top:50px;display:none;margin-left:700px;" class="animated fadeInDown" id="squareselected">Square Selected</p>
+                  <p style="font-size:35px;margin-top:50px;display:none;margin-left:700px;" class="animated fadeInDown" id="squareselected">Square Selected</p>
                   
-                  <p style="font-size:35px;font-family:'Catamaran-Bold';margin-top:50px;display:none;margin-left:700px;" class="animated fadeInDown" id="circleselected">Circle Selected</p>
+                  <p style="font-size:35px;margin-top:50px;display:none;margin-left:700px;" class="animated fadeInDown" id="circleselected">Circle Selected</p>
                   
-                  <p style="font-size:35px;font-family:'Catamaran-Bold';margin-top:50px;display:none;margin-left:700px;" class="animated fadeInDown" id="pentagonselected">Pentagon Selected</p>
+                  <p style="font-size:35px;margin-top:50px;display:none;margin-left:700px;" class="animated fadeInDown" id="pentagonselected">Pentagon Selected</p>
                   
-                  <p style="font-size:35px;font-family:'Catamaran-Bold';margin-top:50px;display:none;margin-left:700px;" class="animated fadeInDown" id="hexagonselected">Hexagon Selected</p>
+                  <p style="font-size:35px;margin-top:50px;display:none;margin-left:700px;" class="animated fadeInDown" id="hexagonselected">Hexagon Selected</p>
                   
-                  <p style="font-size:35px;font-family:'Catamaran-Bold';margin-top:50px;display:none;margin-left:700px;" class="animated fadeInDown" id="starselected">Star Selected</p>
+                  <p style="font-size:35px;margin-top:50px;display:none;margin-left:700px;" class="animated fadeInDown" id="starselected">Star Selected</p>
     
     
-            <p style="font-size:35px;font-family:'Catamaran-Bold';margin-top:50px;margin-left:700px;" class="animated fadeInDown">Made By</p>
+            <p style="font-size:35px;margin-top:50px;margin-left:700px;" class="animated fadeInDown">Made By</p>
     <p style="font-size:40px;margin-top:-25px;margin-left:700px;" class="animated fadeInDown">Adil Rabbani</p>
     
     <script id="vertex-shader" type="x-shader/x-vertex">		
